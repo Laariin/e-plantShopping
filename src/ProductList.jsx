@@ -143,15 +143,18 @@ function ProductList({ onHomeClick }) {
             <div className="navbar" style={styleObj}>
                 <div className="tag">
                     <div className="luxury">
-                        <img
-                            src="https://cdn.pixabay.com/photo/2020/08/05/13/12/eco-5465432_1280.png"
-                            alt="Paradise Nursery logo"
-                        />
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Green%20and%20White%20Organic%20Agriculture%20Logo%2020240723%20204455%200000.png"
+                    alt="Rayo Agro busiiness logo "
+                    style={{
+                        width: "100px",
+                        height: "100px",
+                        objectFit: "contain"
+                        }}/>
                         <a href="/" onClick={handleHomeClick}>
                             <div>
-                                <h3 style={{ color: 'white' }}>Paradise Nursery</h3>
+                                <h3 style={{ color: 'white',textDecoration:'underline' }}>RAYO AGRO</h3>
                                 <i style={{ color: 'white' }}>
-                                    Where Green Meets Serenity
+                                    All your Needs in one place 
                                 </i>
                             </div>
                         </a>
@@ -217,7 +220,9 @@ function ProductList({ onHomeClick }) {
                     {showPlants &&
                         plantsArray.map((category) => (
                             <section key={category.category}>
-                                <h1>{category.category}</h1>
+                              <h1 style={{ textAlign: 'center' }}>
+                                {category.category}
+                                </h1>
 
                                 <div className="product-list">
                                     {category.plants.map((plant, index) => (
