@@ -244,9 +244,9 @@ function ProductList({ onHomeClick }) {
                                                 {plant.description}
                                             </p>
 
-                                            <p className="product-cost">
+                                            <p className="product-cost" style={{ color: "red" }}>
                                                 {plant.cost}
-                                            </p>
+                                                </p>
 
                                             <button
                                                 className="product-button"
